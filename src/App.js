@@ -2,7 +2,7 @@ import UserProfile from './components/UserProfile';
 import user from './user.json';
 import Statistics from './components/Statistics';
 import statatisticalAray from './statistical-data.json';
-import Section from './components/Section'
+import UploadStats from './components/UploadStats'
 import FriendList from './components/FriendList';
 // import FriendListItem from './components/FriendListItem';
 import friends from './friends.json';
@@ -22,7 +22,7 @@ export default function App() {
         />
 
        
-        <Section title="Upload stats">
+        <UploadStats title="Upload stats">
 
             {statatisticalAray.map(s => (<Statistics
                  key={s.id}
@@ -30,7 +30,7 @@ export default function App() {
                 percentage={s.percentage}
                 />
             ))}
-        </Section>
+        </UploadStats>
 
         <FriendList items={friends} />
 

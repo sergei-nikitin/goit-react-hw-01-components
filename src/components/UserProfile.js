@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import './UserProfile.css';
 
 export default function UserProfile({ avatar, name, tag, location, followers, views, likes }) {
   return (
@@ -15,15 +16,15 @@ export default function UserProfile({ avatar, name, tag, location, followers, vi
       </div>
 
       <ul class="stats">
-        <li>
+        <li class="statsItem">
           <span class="label">Followers </span>
           <span class="quantity">{followers}</span>
         </li>
-        <li>
+        <li class="statsItem">
           <span class="label">Views </span>
           <span class="quantity">{views}</span>
         </li>
-        <li>
+        <li class="statsItem">
           <span class="label">Likes </span>
           <span class="quantity">{likes}</span>
         </li>
