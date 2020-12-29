@@ -1,9 +1,9 @@
-import UserProfile from './components/UserProfile';
+import UserProfile from './components/UserProfile/UserProfile';
 import user from './user.json';
-import Statistics from './components/Statistics';
+import Statistics from './components/UploadStats/Statistics';
 import statatisticalAray from './statistical-data.json';
-import UploadStats from './components/UploadStats'
-import FriendList from './components/FriendList';
+import UploadStats from './components/UploadStats/UploadStats'
+import FriendsList from './components/Friends/FriendsList';
 // import FriendListItem from './components/FriendListItem';
 import friends from './friends.json';
 import TransactionHistory from './components/TransactionHistory';
@@ -32,7 +32,7 @@ export default function App() {
             ))}
         </UploadStats>
 
-        <FriendList items={friends} />
+        <FriendsList items={friends} />
 
         <TransactionHistory items={transactions} />
        

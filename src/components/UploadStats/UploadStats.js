@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import './UploadStats.css';
+import styles from './UploadStats.module.css';
 
 export default function UploadStats({ title, children }) {
-    return <div className="uploadStatsContainer">
-        {title && <h2 className="titleStatsContainer">{title}</h2>}
-        <div className="statsUpload">
+    return <div className={styles.uploadStatsContainer}>
+        {title && <h2 className={styles.titleStatsContainer}>{title}</h2>}
+        <div className={styles.statsUpload}>
             {children}
         </div>
     </div>;
