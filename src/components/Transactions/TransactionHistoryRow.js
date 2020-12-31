@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import styles from './TransactionHistoryRow.module.css';
 
 export default function TransactionHistoryRow({ id, type, amount, currency }) {
     return (
-        <tbody>
-    <tr>
+        <tbody className={styles.tbody}>
+    <tr className={styles.tr}>
       <td>{type}</td>
      <td>{amount}</td>
       <td>{currency}</td>

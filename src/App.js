@@ -6,7 +6,7 @@ import UploadStats from './components/UploadStats/UploadStats'
 import FriendsList from './components/Friends/FriendsList';
 // import FriendListItem from './components/FriendListItem';
 import friends from './friends.json';
-import TransactionHistory from './components/TransactionHistory';
+import TransactionHistory from './components/Transactions/TransactionHistory';
 import transactions from './transactions.json';
 
 export default function App() {

@@ -1,0 +1,14 @@
+.tr {
+  /* display: flex; */
+  /* align-items: center; */
+  /* background-color: lightslategrey; */
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+td {
+  text-align: center;
+}
+
+.tbody:nth-child(2n) {
+  background-color: silver;
+}
