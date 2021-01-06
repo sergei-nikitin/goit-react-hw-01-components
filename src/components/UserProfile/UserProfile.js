@@ -1,19 +1,22 @@
-import PropTypes from 'prop-types';
-// import './UserProfile.css';
-import styles from './UserProfile.module.css';
+import PropTypes from "prop-types";
+import styles from "./UserProfile.module.css";
 
-export default function UserProfile({ avatar, name, tag, location, followers, views, likes }) {
+export default function UserProfile({
+  avatar,
+  name,
+  tag,
+  location,
+  followers,
+  views,
+  likes,
+}) {
   return (
     <div className={styles.profile}>
       <div className={styles.description}>
-        <img
-          src={avatar}
-          alt="Аватар пользователя"
-          className={styles.avatar}
-        />
+        <img src={avatar} alt="Аватар пользователя" className={styles.avatar} />
         <p className={styles.name}>{name}</p>
         <p className={styles.tag}>{tag}</p>
-      <p className={styles.location}>{location}</p>
+        <p className={styles.location}>{location}</p>
       </div>
 
       <ul className={styles.stats}>
@@ -35,11 +38,11 @@ export default function UserProfile({ avatar, name, tag, location, followers, vi
 }
 
 UserProfile.propTypes = {
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    followers: PropTypes.number.isRequired,
-    views: PropTypes.number.isRequired,
-    likes: PropTypes.number.isRequired,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  followers: PropTypes.number.isRequired,
+  views: PropTypes.number.isRequired,
+  likes: PropTypes.number.isRequired,
 };
